@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline:none;
+}
+
+body {
+    background:linear-gradient(to right, rgba(0, 0, 255, 0.405), rgba(185, 0, 0, 0.69) );
+}
+
+main {
+    width:450px;
+    background:rgba(210, 210, 210, 0.777);
+    border-radius:10px;
+    margin:100px auto ;
+}
+
+.caixaDeTexto {
+    height: 38px;
+    width:260px;
+    border-radius:4px;
+    border:none;
+    padding-left:10px;
+    margin:20px
+}
+
+.adicionar {
+    padding:8px 11px;
+    border-radius:3px;
+    background: rgba(0, 0, 255, 0.405);
+    color:#fff;
+    font-size:17px;
+    border:none;
+    float:right;
+    font-weight:700;
+    margin:20px;
+}
+
+.adicionar:hover {
+    opacity:0.8;
+    cursor:pointer;
+}
+
+.adicionar:active {
+    opacity:0.6;
+}   
+
+.lista {
+    margin:30px 20px;
+    padding-bottom:7px;
+}
+
+.itensDaLista {
+    background-color:#f2f2f2;
+    box-shadow:1px 4px 10px rgba(0,0,0,0.2);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 15px;
+    border-radius:5px;
+    margin-bottom: 18px;
+    height:35px;
+    cursor:pointer;
+}
+
+.lista img {
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+    background-color:white;
+    border-radius:50%;
+    background-size:cover;
+}
+
+.itensDaLista:hover img {
+    opacity:1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration:line-through;
+}
+
+@media screen and (max-width:450px) {
+    main {
+        width:330px;
+        background:rgba(210, 210, 210, 0.777);
+        border-radius:10px;
+        margin:100px auto ;
+    }
+
+    .adicionar {
+        display:block;
+        margin:-7px 215px
+    }
+
+    .lista {
+        margin-top:55px
+    }
+   
+}
+
+
